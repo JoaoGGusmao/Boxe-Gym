@@ -1,0 +1,8 @@
+.body{
+
+}
+
+.cor_fundo_1{
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 36%, rgba(255,6,0,1) 64%);
+}
