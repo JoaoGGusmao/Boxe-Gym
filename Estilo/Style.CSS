@@ -1,6 +1,11 @@
-.body{
-
+/* Defina a imagem de fundo para o corpo da página */
+body {
+    background-image: url('https://static.giggster.com/images/location/c700e730-cf38-4670-88bb-bceeab8afec8/9c1467f8-6a63-4767-b721-2ec3ac294c67/full_hd_retina.jpeg'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
 }
+
 
 .cor_fundo_1{
     background: rgb(0,0,0);
