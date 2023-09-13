@@ -1,13 +1,118 @@
 /* Defina a imagem de fundo para o corpo da página */
 body {
-    background-image: url('https://static.giggster.com/images/location/c700e730-cf38-4670-88bb-bceeab8afec8/9c1467f8-6a63-4767-b721-2ec3ac294c67/full_hd_retina.jpeg'); 
-    background-size: cover; 
-    background-repeat: no-repeat; 
-    background-attachment: fixed; 
+    background-color: whitesmoke;
 }
 
 
-.cor_fundo_1{
+  .cor_fundo_1{
     background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,1) 36%, rgba(255,6,0,1) 64%);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 36%, rgb(131, 17, 15) 64%);
 }
+
+    .nav-item a:hover { color: #f00; }
+    .nav-item a{
+        font-size: large;
+        
+    }
+    
+    .navbar-nav .nav-link {
+    text-decoration: none; 
+    color: #fff; 
+    padding: 3px 2px; 
+    position: relative; 
+    }
+
+
+    .navbar-nav .nav-link::before {
+    content: ''; 
+    position: absolute; 
+    width: 85%;
+    height: 2px; 
+    bottom: 0; 
+    background-color: red; 
+    transform: scaleX(0); 
+    transform-origin: bottom left; 
+    transition: transform 0.3s ease-in-out; 
+    }
+
+
+    .navbar-nav .nav-link:hover::before {
+     transform: scaleX(1); 
+    transform-origin: bottom center; 
+    }
+
+  
+
+  .background {
+    background-image: url(https://static.giggster.com/images/location/c700e730-cf38-4670-88bb-bceeab8afec8/9c1467f8-6a63-4767-b721-2ec3ac294c67/full_hd_retina.jpeg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  
+  .blur {
+    background: rgba(255, 255, 255, 0.062); 
+    backdrop-filter: blur(4px); 
+    height: 100vh;
+      
+  }
+
+
+
+/* Estilizando o container principal */
+/* Estilizando o container principal */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Estilizando os cards */
+  .card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center; /* Centraliza o texto */
+  }
+  
+  /* Estilizando os títulos dos cards */
+  .card h1, .card h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center; /* Alinha o primeiro texto no canto esquerdo */
+  }
+  
+  /* Estilizando o conteúdo dos cards */
+  .card p {
+    font-size: 18px;
+    color: #666;
+    text-align: center; /* Centraliza o texto */
+  }
+  
+  /* Estilizando a lista de benefícios */
+  .card ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    text-align: center; /* Centraliza o texto */
+  }
+  
+  /* Estilizando os links nos cards */
+  .card a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  /* Estilizando o link quando estiver em hover */
+  .card a:hover {
+    text-decoration: underline;
+  }
+  
+  
