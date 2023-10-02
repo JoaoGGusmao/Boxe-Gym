@@ -1,0 +1,227 @@
+/* Estilos CSS para a página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(0, 0, 0, 0.849);
+    margin: 0;
+    padding: 0;
+}
+.cor_fundo_1{
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 36%, rgb(131, 17, 15) 64%);
+}
+
+    .nav-item a:hover { color: #f00; }
+    .nav-item a{
+        font-size: large;
+        font-family: Arial Narrow, sans-serif;
+        font-size: large;
+    }
+    
+    .navbar-nav .nav-link {
+    text-decoration: none; 
+    color: #fff; 
+    padding: 3px 2px; 
+    position: relative; 
+    }
+
+
+    .navbar-nav .nav-link::before {
+    content: ''; 
+    position: absolute; 
+    width: 85%;
+    height: 2px; 
+    bottom: 0; 
+    background-color: red; 
+    transform: scaleX(0); 
+    transform-origin: bottom left; 
+    transition: transform 0.3s ease-in-out; 
+    }
+
+
+    .navbar-nav .nav-link:hover::before {
+     transform: scaleX(1); 
+    transform-origin: bottom center; 
+    }
+
+    /* ION */
+    .ion a:hover { color: red; }
+    .ion a{
+        font-size: large;
+        
+    }
+    
+    .ion {
+    text-decoration: none; 
+    color: #fff; 
+    padding: 3px 2px; 
+    position: relative; 
+    }
+
+
+    .ion::before {
+    content: ''; 
+    position: absolute; 
+    width: 85%;
+    height: 2px; 
+    bottom: 0; 
+    background-color: red; 
+    transform: scaleX(0); 
+    transform-origin: bottom left; 
+    transition: transform 0.3s ease-in-out; 
+    }
+
+
+    .ion:hover::before {
+     transform: scaleX(1); 
+    transform-origin: bottom center; 
+    }
+    
+    
+h1 {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+    font-family: Arial Narrow, sans-serif;
+    font-size: large;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product {
+    border: 1px solid #ddd;
+    background-color: #fff;
+    box-shadow: rgba(131, 17, 15) 0px 10px 36px 0px, rgba(0, 0, 0, 0.61) 0px 0px 0px 1px;
+    padding: 10px; /* Reduzindo o padding */
+    margin: 10px;
+    flex: 0 0 calc(30% - 20px);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    position: relative; /* Para o efeito de zoom */
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out; /* Para o efeito de zoom */
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product:hover img {
+    transform: scale(1.2); /* Efeito de zoom no hover */
+}
+
+.product h2 {
+    font-size: 1rem; /* Reduzindo o tamanho da fonte */
+    margin: 10px 0;
+    font-family: Arial Narrow, sans-serif;
+    font-size: large;
+}
+
+.product p {
+    font-size: 0.8rem; /* Reduzindo o tamanho da fonte */
+    font-family: Arial Narrow, sans-serif;
+    font-size: large;
+}
+
+.product button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 8px 16px; /* Reduzindo o padding */
+    font-size: 0.8rem; /* Reduzindo o tamanho da fonte */
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.product button:hover {
+    background-color: #555;
+}
+
+#carrinho {
+    max-width: 300px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-left: 20px;
+}
+
+#carrinho h3 {
+    font-size: 1.2rem;
+    font-family: Arial Narrow, sans-serif;
+    font-size: large;
+}
+
+#carrinho h4 {
+    font-size: 1rem;
+    margin-top: 10px;
+    font-family: Arial Narrow, sans-serif;
+    font-size: large;
+}
+
+
+
+/* Botão de Limpar Carrinho */
+#carrinho button {
+    background: rgba(155, 23, 21, 0.897) 64%;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#carrinho button:hover {
+    background-color: #c9302c;
+}
+
+/* Estilos CSS para o carrinho de compras */
+#carrinho {
+    max-width: 300px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: rgba(131, 17, 15) 0px 10px 36px 0px, rgba(0, 0, 0, 0.61) 0px 0px 0px 1px;
+    padding: 20px;
+    margin-left: 20px;
+    position: relative;
+}
+
+#carrinho h3 {
+    font-size: 1.2rem;
+    font-family: Arial Narrow, sans-serif;
+    font-size: large;
+}
+
+#carrinho h4 {
+    font-size: 1rem;
+    margin-top: 10px;
+    font-family: Arial Narrow, sans-serif;
+    font-size: large;
+}
+
+
+
+@media (max-width: 768px) {
+    .product {
+        flex: 0 0 calc(50% - 20px);
+    }
+
+    #carrinho {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <title>Loja de Boxe</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="StyleLoja.CSS">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-sm  navbar-dark cor_fundo_1">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="PaginaPrincipal.HTML" ><img src="Imagens/logo.png" height="90px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#horarios" >Horários</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Treinadores">Treinadores </a>
+              </li>
+               
+               
+            </ul>
+              <a href="https://web.whatsapp.com"><ion-icon class="ion" name="logo-whatsapp" id="contato"></ion-icon></a>
+              <a href="https://www.instagram.com"><ion-icon class="ion" name="logo-instagram" ></ion-icon></a>
+          </div>
+        </div>
+      
+      </nav>
+    <!-- ... (código anterior) ... -->
+<div class="container">
+<div class="product" id="product1">
+    <img src="https://a-static.mlcdn.com.br/450x450/luva-de-boxe-do-brasil-muay-thai-treino-e-luta-round-fight-sutti/dboxe/d8681f4e66b011edbd5c4201ac185019/dd517cf46e2b0e66b29f0ace054452cb.jpeg" alt="Luvas de Boxe" width="110px">
+    <h2>Luvas de Boxe</h2>
+    <p>Luvas de alta qualidade para treinamento.</p>
+    <p>Preço: R$ 99.99</p>
+    <button onclick="adicionarAoCarrinho('Luvas de Boxe', 99.99)">Adicionar ao Carrinho</button>
+</div>
+<div class="product" id="product2">
+    <img src="https://images.tcdn.com.br/img/img_prod/934485/saco_de_pancada_profissional_1_10_metros_saco_de_boxe_cheio_35_kg_saco_de_muay_thai_357_1_bda12a47ffcfea5f37816fd05cf59116.png" alt="Saco de Pancadas" width="110px">
+    <h2>Saco de Pancadas</h2>
+    <p>Saco de pancadas resistente para treinamento.</p>
+    <p>Preço: R$ 149.99</p>
+    <button onclick="adicionarAoCarrinho('Saco de Pancadas', 149.99)">Adicionar ao Carrinho</button>
+</div>
+<div class="product" id="product3">
+    <img src="https://www.clubedalutashop.com/media/catalog/product/cache/1/image/800x/9df78eab33525d08d6e5fb8d27136e95/a/p/apx_brasil.jpeg" alt="Protetor Bucal" width="110px">
+    <h2>Protetor Bucal</h2>
+    <p>Protetor bucal para proteger seus dentes durante o treinamento.</p>
+    <p>Preço: R$ 9.99</p>
+    <button onclick="adicionarAoCarrinho('Protetor Bucal', 9.99)">Adicionar ao Carrinho</button>
+</div>
+<div class="product" id="product4">
+    <img src="https://cdn.dooca.store/412/products/preta-branco-1_640x640+fill_ffffff.png?v=1661289414&webp=0" alt="Corda de Pular" width="110px">
+    <h2>Corda de Pular</h2>
+    <p>Corda para saltos e cardio.</p>
+    <p>Preço: R$ 20.99</p>
+    <button onclick="adicionarAoCarrinho('Corda de Pular', 20.99)">Adicionar ao Carrinho</button>
+</div>
+<div class="product" id="product5">
+    <img src="https://img4.dhresource.com/260x260/f3/albu/km/o/07/c935d9c0-40e0-4a85-bab9-67b1f14007e6.jpg" alt="Calção de Boxe" width="110px">
+    <h2>Calção de Boxe</h2>
+    <p>Calção de Boxe do Brasil.</p>
+    <p>Preço: R$ 59.99</p>
+    <button onclick="adicionarAoCarrinho('Calção de Boxe', 59.99)">Adicionar ao Carrinho</button>
+</div>
+<div class="product" id="product6">
+    <img src="https://http2.mlstatic.com/D_NQ_NP_814212-MLB70963513457_082023-O.webp" alt="Bandagem" width="110px">
+    <h2>Bandagem</h2>
+    <p>Bandagem Azul para melhor proteção das mãos no boxe.</p>
+    <p>Preço: R$ 39.99</p>
+    <button onclick="adicionarAoCarrinho('Bandagem', 39.99)">Adicionar ao Carrinho</button>
+</div>
+</div>
+<!-- ... (código posterior) ... -->
+
+
+    
+    <div id="carrinho">
+        <h3>Itens no Carrinho:</h3>
+        <!-- Itens do carrinho serão exibidos aqui -->
+        <i class="fas fa-shopping-cart"></i> <!-- Ícone de carrinho de compras -->
+        <button onclick="limparCarrinho()">Limpar Carrinho</button> <!-- Botão de limpar carrinho -->
+    </div>
+    
+
+    <script src="Javascript/ScriptLoja.JS"></script>
+</body>
+</html>
+
